@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Animal Crossing Daycare</title>
+</head>
+
+<body>
+
+<header class="welcomeCard">
+    <div class="card">
+        <h1 class="card__header">
+            Welcome to Animal Crossing Daycare!
+        </h1>
+        <p class="welcome__description">Click below to play!</p>
+        <button class="button" id="button__begin">Begin</button>
+    </div>
+</header>
+
+<div class="card select">
+    <p class="select__title">Choose Your Villager:</p>
+    <br>
+    <button class="button choosePapi" id="selectPapi">Papi 🐴</button>
+    <button class="button chooseApple" id="selectApple">Apple 🍎</button>
+    <button class="button chooseStitches" id="selectStitches">Stitches 🧸</button>
+</div>
+
+<div id="papiCard">
+    <div class="card">
+        <div class="card__header">
+            <h1>Papi 🐴</h1>
+        </div>
+        <div class="villager__image">
+            <img src="./papi.jpeg" alt="Papi the Horse">
+        </div>
+        <div class="actions-container">
+            <button class="button" id="papiFeedSelect">Feed Me</button>
+            <button class="button" id="papiPlaySelect">Play Time</button>
+            <button class="button" id="papiSleepSelect">Nap Time</button>
+            <button class="button" id="papiRestartSelect">Restart</button>
+        </div>
+        <div class="stats">
+            <p>Species: <span id="papi__species" class="stats-text"> Horse </span></p> 
+            <p>Health: <span id="papi__health" class="stats-text"> Meh </span></p> 
+            <p>Energy: <span id="papi__energy" class="stats-text"> Tired as a horse! </span></p> 
+            <p>Mood: <span id="papi__mood" class="stats-text"> Hangry! </span></p> 
+            <p>Hunger: <span id="papi__hunger" class="stats-text"> Hungry as a horse! </span></p> 
+        </div>
+    </div>
+</div>
+
+
+<div id="appleCard">
+    <div class="card">
+        <div class="card__header">
+            <h1>Apple 🍎</h1> 
+        </div>
+        <div class="villager__image">
+            <img src="./apple.jpeg" alt="Apple the Hamster"> 
+        </div>
+        <div class="actions-container">
+            <button class="button" id="appleFeedSelect">Feed Me</button>
+            <button class="button" id="applePlaySelect">Play Time</button>
+            <button class="button" id="appleSleepSelect">Nap Time</button>
+            <button class="button" id="appleRestartSelect">Restart</button>
+        </div>
+        <div class="stats">
+            <p>Species: <span id="apple__species" class="stats-text"> Hamster </span></p> 
+            <p>Health: <span id="apple__health" class="stats-text"> Meh </span></p> 
+            <p>Energy: <span id="apple__energy" class="stats-text"> Pooped </span></p> 
+            <p>Mood: <span id="apple__mood" class="stats-text"> Content </span></p> 
+            <p>Hunger: <span id="apple__hunger" class="stats-text"> HUNGY! </span></p> 
+        </div>
+    </div>
+</div>
+
+<div id="stitchesCard">
+    <div class="card">
+        <div class="card__header">
+            <h1>Stitches 🧸</h1>
+        </div>
+        <div class="villager__image">
+            <img src="./stitches.jpeg" alt="Stitches the Cub">
+        </div>
+        <div class="actions-container">
+            <button class="button" id="stitchesFeedSelect">Feed Me</button>
+            <button class="button" id="stitchesPlaySelect">Play Time</button>
+            <button class="button" id="stitchesSleepSelect">Nap Time</button>
+            <button class="button" id="stitchesRestartSelect">Restart</button>
+        </div>
+        <div class="stats">
+            <p>Species: <span id="stitches__species" class="stats-text"> Cub </span></p>
+            <p>Health: <span id="stitches__health" class="stats-text"> Beary Low </span></p> 
+            <p>Energy: <span id="stitches__energy" class="stats-text"> Need to hibernate! </span></p> 
+            <p>Mood: <span id="stitches__mood" class="stats-text"> Content </span></p> 
+            <p>Hunger: <span id="stitches__hunger" class="stats-text"> Super Mega Hungy </span></p>
+        </div>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
